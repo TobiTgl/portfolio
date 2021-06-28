@@ -38,15 +38,15 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__text">
-                            <h3 className="project-wrapper__text-title">{'Project Title'}</h3>
+                            <h3 className="project-wrapper__text-title">{'Magma Esports'}</h3>
                             <div>
                                 <p>
                                 {
-                                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                                    'The magma esports webapplication is a service that displays match information and results of the latest CS:GO & League of Legends esports matches. The application was developed as part of the webapplication course during my studies at the OAMK in Oulu in collaboration with my project group consisting of 4 members. The project was divided into frontend & backend developend including API & database integration.'}
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>
-                            <a
+                            {/*<a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cta-btn cta-btn--hero"
@@ -64,7 +64,7 @@ export default function Projects() {
                                 >
                                 Source Code
                                 </a>
-                            )}
+                            )}*/}
                             </div>
                         </Fade>
                         </Col>
@@ -115,15 +115,16 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__text">
-                            <h3 className="project-wrapper__text-title">{'Project Title'}</h3>
+                            <h3 className="project-wrapper__text-title">{'GreenFuel'}</h3>
                             <div>
                                 <p>
                                 {
-                                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                                    'GreenFuel is the online platform of a fictional EV charging provider. It is a another application that I developed during my studies in Oulu. It was an individual graded project that included frontend & backend development. This project introduced me to webdevelopment & javascript programming which were valuable for my education.'
+                                    }
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>
-                            <a
+                            {/*<a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cta-btn cta-btn--hero"
@@ -141,7 +142,7 @@ export default function Projects() {
                                 >
                                 Source Code
                                 </a>
-                            )}
+                            )}*/}
                             </div>
                         </Fade>
                         </Col>
@@ -192,15 +193,16 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__text">
-                            <h3 className="project-wrapper__text-title">{'Project Title'}</h3>
+                            <h3 className="project-wrapper__text-title">{'Food Randomizer'}</h3>
                             <div>
                                 <p>
                                 {
-                                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                                    'Have you ever struggled to decide what to cook for your next meal? I often faced that problem in the past which is why I decided to develop the food randomizer. Simply save meals you can cook in the app and tap on the random button which randomly chooses a meal for you with a slotmachine like animation.'
+                                    }
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>
-                            <a
+                            {/*<a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cta-btn cta-btn--hero"
@@ -218,7 +220,7 @@ export default function Projects() {
                                 >
                                 Source Code
                                 </a>
-                            )}
+                            )}*/}
                             </div>
                         </Fade>
                         </Col>
