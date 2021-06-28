@@ -23,18 +23,32 @@ export default function Header() {
       <Container>
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
         <Navbar className="header">
-            <Navbar.Brand href="#home"><img src="https://res.cloudinary.com/tobitgl/image/upload/v1624617298/Portfolio/favicon_f2mfg6.pn" alt="Logo" /> </Navbar.Brand>
+            <Navbar.Brand className="brand" href="#"><img src="https://res.cloudinary.com/tobitgl/image/upload/v1624871653/Portfolio/ttobenunten_mpqktt.png" width="30" height="30" alt="Logo" /> </Navbar.Brand>
                 <Navbar.Text>
-                    <div className="headertext">About</div>
+                    <Link to="about" smooth duration={1000}>
+                        <div className="headertext">About</div>
+                    </Link>
                 </Navbar.Text>
+
                 <Navbar.Text>
-                    <div className="headertext">Projects</div>
+                    <Link to="projects" smooth duration={1000}>
+                        <div className="headertext">Projects</div>
+                    </Link>
+                   
                 </Navbar.Text>
+
                 <Navbar.Text>
-                    <div className="headertext">Gallery</div>
+                    <Link to="hero" smooth duration={1000}>
+                        <div className="headertext">Gallery</div>
+                    </Link>
+                    
                 </Navbar.Text>
+
                 <Navbar.Text>
-                    <div className="headertext">Contact</div>
+                    <Link to="contact" smooth duration={1000}>
+                        <div className="headertext">Contact</div>
+                    </Link>
+                
                 </Navbar.Text>
         </Navbar>
         </Fade>

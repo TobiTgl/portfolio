@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 export default function About() {
 
@@ -21,35 +22,42 @@ export default function About() {
     return (
         <section id="about">
       <Container>
-       
+        <Fade bottom duration={1000} delay={300} distance="0px">
+            <h2 className="section-title">About</h2>
+        </Fade>
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            
+            <Fade bottom duration={1000} delay={600} distance="30px">
+                <div className="about-wrapper__image">
+                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624873313/Portfolio/bwerbungbw_uwfwan.jpg"} width="257.58" height="333.33"></img>
+                </div>
+            </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'Hello my name is Tobias and I am a technology and management student from the south of Germany. '}
                 </p>
                 <p className="about-wrapper__info-text">
                   {
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'On this website I am showcasing some of the projects I was working on during my studies as well as some free time projects.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  { 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  { 'Besides that I have a great passion for photography. You can find a selection of my photos in the gallery section.'}
                 </p>
                 {(
                   <span className="d-flex mt-3">
+                       <Link to="contact" smooth duration={1000}>
                     <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
                       
+                      className="cta-btn cta-btn--resume"
+                
                     >
-                      Resume
+                      Contact
                     </a>
+                    </Link>
                   </span>
                 )}
               </div>
