@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
+import Timelapse from './components/Timelapse';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.scss';
 
@@ -25,8 +26,10 @@ function App() {
     <Hero />
     <About />
     <Projects />
-    <Contact />
     <Gallery />
+    <Timelapse />
+    <Contact />
+    
     <Footer />
     
     

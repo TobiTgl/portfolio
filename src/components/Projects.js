@@ -77,12 +77,7 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__image">
-                            <a
-                                href={'#!'}
-                                target="_blank"
-                                aria-label="Project Link"
-                                rel="noopener noreferrer"
-                            >
+                            
                                 <Tilt
                                 options={{
                                     reverse: false,
@@ -97,10 +92,10 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624882171/Portfolio/magmaresults_ojlbs6.png"} width="650" height="325"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624882171/Portfolio/magmaresults_ojlbs6.png"} width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
-                            </a>
+                            
                             </div>
                         </Fade>
                         </Col>
@@ -155,12 +150,7 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__image">
-                            <a
-                                href={'#!'}
-                                target="_blank"
-                                aria-label="Project Link"
-                                rel="noopener noreferrer"
-                            >
+                            
                                 <Tilt
                                 options={{
                                     reverse: false,
@@ -175,10 +165,10 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624882171/Portfolio/greenfuelmitpins_ohvait.png"} width="650" height="325"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624882171/Portfolio/greenfuelmitpins_ohvait.png"} width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
-                            </a>
+                            
                             </div>
                         </Fade>
                         </Col>
@@ -233,12 +223,7 @@ export default function Projects() {
                             distance="30px"
                         >
                             <div className="project-wrapper__image">
-                            <a
-                                href={'#!'}
-                                target="_blank"
-                                aria-label="Project Link"
-                                rel="noopener noreferrer"
-                            >
+                            
                                 <Tilt
                                 options={{
                                     reverse: false,
@@ -253,10 +238,10 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624884703/Portfolio/randfood_jtsasd.gif"} width="150" height="325"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624884703/Portfolio/randfood_jtsasd.gif"} width="20%" height="20%"></img>
                                 </div>
                                 </Tilt>
-                            </a>
+                           
                             </div>
                         </Fade>
                         </Col>

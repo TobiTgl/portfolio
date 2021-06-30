@@ -22,8 +22,10 @@ export default function Header() {
        <footer className="footer navbar-static-bottom">
       <Container>
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-        <Navbar className="header">
+        <Navbar className="header" expand="sm" variant="dark">
             <Navbar.Brand className="brand" href="#"><img src="https://res.cloudinary.com/tobitgl/image/upload/v1624871653/Portfolio/ttobenunten_mpqktt.png" width="30" height="30" alt="Logo" /> </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                 <Navbar.Text>
                     <Link to="about" smooth duration={1000}>
                         <div className="headertext">About</div>
@@ -50,6 +52,7 @@ export default function Header() {
                     </Link>
                 
                 </Navbar.Text>
+                </Navbar.Collapse>
         </Navbar>
         </Fade>
        

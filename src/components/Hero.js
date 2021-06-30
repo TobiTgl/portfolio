@@ -39,7 +39,7 @@ export default function Hero() {
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {'Know more'}
+                {'more'}
               </Link>
             </span>
           </p>
