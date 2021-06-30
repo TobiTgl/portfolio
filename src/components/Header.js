@@ -40,8 +40,14 @@ export default function Header() {
                 </Navbar.Text>
 
                 <Navbar.Text>
-                    <Link to="hero" smooth duration={1000}>
+                    <Link to="gallery" smooth duration={1000}>
                         <div className="headertext">Gallery</div>
+                    </Link>
+                    
+                </Navbar.Text>
+                <Navbar.Text>
+                    <Link to="timelapse" smooth duration={1000}>
+                        <div className="headertext">Timelapse</div>
                     </Link>
                     
                 </Navbar.Text>

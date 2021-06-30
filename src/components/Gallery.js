@@ -18,6 +18,10 @@ export default function Gallery() {
                         width="70%" height="70%"
                         src="https://res.cloudinary.com/tobitgl/image/upload/v1625061268/Portfolio/gallery/1_u0g0nf.jpg"
                         />
+                        <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
