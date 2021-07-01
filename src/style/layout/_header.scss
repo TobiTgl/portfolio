@@ -7,6 +7,9 @@
   @include respond(phone) {
     border: 0px;
   }
+  img{
+    pointer-events: none;
+  }
 
   &__text {
     color: darken(white, 50%);

@@ -3,64 +3,48 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import Carousel from 'react-bootstrap/Carousel'
+import axios from 'axios';
+import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
 
 export default function Gallery() {
+
+    const [gallery, setGallery] = useState([]);
+    useEffect(() => {
+        axios.get('https://res.cloudinary.com/tobitgl/image/list/portfolio.json')
+            .then(res => {
+                console.log(res.data.resources);
+                setGallery(res.data.resources);
+            });
+      }, []);
+
     return (
-        <div className="footer navbar-static-bottom">
+        <section id="gallery">
             <Container className="gallery">
                 <Fade bottom duration={1000} delay={300} distance="0px">
                     <h2 className="section-title">Gallery</h2>
                 </Fade>
                 <Fade bottom duration={1000} delay={500} distance="0px">
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625061268/Portfolio/gallery/1_u0g0nf.jpg"
-                        />
-                        <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625061285/Portfolio/gallery/6a_wechoa.jpg"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625061303/Portfolio/gallery/7a_knncbe.jpg"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625061975/Portfolio/gallery/7b_lborpa.jpg"
-                        />
-                    </Carousel.Item>
-                    
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625062002/Portfolio/gallery/Spatz_Star-11_zrilps.jpg"
-                        />
-                    </Carousel.Item>
-                    
-                    <Carousel.Item>
-                        <img
-                        width="70%" height="70%"
-                        src="https://res.cloudinary.com/tobitgl/image/upload/v1625062004/Portfolio/gallery/oulu28beach-38_kjnb0m.jpg"
-                        />
-                    </Carousel.Item>
-                    
-                    
+                <Carousel >
+                {
+                    gallery.map(data => {
+                        return(
+                            
+                            <Carousel.Item id={data.public_id}>
+                            <img
+                            width="70%" height="70%"
+                            src={`https://res.cloudinary.com/tobitgl/image/upload/${data.public_id}.jpg`}
+                            className="carousel"
+                            alt="img"
+                            />
+                            
+                        </Carousel.Item>  
+                        )
+                    })
+                }    
                 </Carousel>
                 </Fade>
                 
             </Container>
-        </div>
+        </section>
     )
 }
