@@ -1,21 +1,29 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import axios from 'axios';
-import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+
+
 
 export default function Gallery() {
-
+    
     const [gallery, setGallery] = useState([]);
     useEffect(() => {
         axios.get('https://res.cloudinary.com/tobitgl/image/list/portfolio.json')
             .then(res => {
-                console.log(res.data.resources);
-                setGallery(res.data.resources);
+                
+                const arr = res.data.resources;
+                shuffle(arr)
+                setGallery(arr);
+                
             });
       }, []);
+
+      function shuffle(array) {
+        array.sort(() => Math.random() - 0.5);
+       
+      }
 
     return (
         <section id="gallery">
@@ -43,7 +51,6 @@ export default function Gallery() {
                 }    
                 </Carousel>
                 </Fade>
-                
             </Container>
         </section>
     )
