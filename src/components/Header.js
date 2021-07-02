@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect  } from 'react';
+import React, {useState, useEffect  } from 'react';
 import { Container } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-scroll';

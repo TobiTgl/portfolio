@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
@@ -29,7 +29,7 @@ export default function About() {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
                 <div className="about-wrapper__image">
-                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624873313/Portfolio/bwerbungbw_uwfwan.jpg"} width="50%" height="100%"></img>
+                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624873313/Portfolio/bwerbungbw_uwfwan.jpg"} alt="img" width="50%" height="100%"></img>
                 </div>
             </Fade>
           </Col>
@@ -38,25 +38,25 @@ export default function About() {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {
-                    'Hello my name is Tobias and I am a technology and management student from the south of Germany. '}
+                    'Hello, my name is Tobias and I am a technology and management student from the south of Germany.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {
-                    'On this website I am showcasing some of the projects I was working on during my studies as well as some free time projects.'}
+                    'On this website, I am showcasing some of the projects I was working on during my studies as well as some free time projects.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  { 'Besides that I have a great passion for photography. You can find a selection of my photos in the gallery section.'}
+                  { 'Besides that, I have a great passion for photography. You can find a selection of my photos in the gallery & timelapse section.'}
                 </p>
                 {(
                   <span className="d-flex mt-3">
                        <Link to="contact" smooth duration={1000}>
-                    <a
+                    <div
                       
                       className="cta-btn cta-btn--resume"
                 
                     >
                       Contact
-                    </a>
+                    </div>
                     </Link>
                   </span>
                 )}

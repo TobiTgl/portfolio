@@ -1,8 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import Carousel from 'react-bootstrap/Carousel'
+import { Container} from 'react-bootstrap';
+
 
 export default function Timelapse() {
     return (
@@ -13,7 +12,7 @@ export default function Timelapse() {
                         <h2 className="section-title">Timelapse</h2>
                     </Fade>
                     <Fade bottom duration={1000} delay={400} distance="0px">
-                        <p>Here you can find my collection of timelapses and video projects I have created over the last few years.</p>
+                        <p>Here you can find my collection of timelapse and other video projects I have created over the last few years.</p>
                     </Fade>
                     <div className="vid">
                         <Fade bottom duration={1000} delay={500} distance="0px">
