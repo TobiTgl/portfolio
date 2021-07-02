@@ -1,0 +1,50 @@
+import React, { useContext, useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
+import Carousel from 'react-bootstrap/Carousel'
+import axios from 'axios';
+import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+
+export default function Gallery() {
+
+    const [gallery, setGallery] = useState([]);
+    useEffect(() => {
+        axios.get('https://res.cloudinary.com/tobitgl/image/list/portfolio.json')
+            .then(res => {
+                console.log(res.data.resources);
+                setGallery(res.data.resources);
+            });
+      }, []);
+
+    return (
+        <section id="gallery">
+            <Container className="gallery">
+                <Fade bottom duration={1000} delay={300} distance="0px">
+                    <h2 className="section-title">Gallery</h2>
+                </Fade>
+                <Fade bottom duration={1000} delay={500} distance="0px">
+                <Carousel >
+                {
+                    gallery.map(data => {
+                        return(
+                            
+                            <Carousel.Item id={data.public_id}>
+                            <img
+                            width="70%" height="70%"
+                            src={`https://res.cloudinary.com/tobitgl/image/upload/${data.public_id}.jpg`}
+                            className="carousel"
+                            alt="img"
+                            />
+                            
+                        </Carousel.Item>  
+                        )
+                    })
+                }    
+                </Carousel>
+                </Fade>
+                
+            </Container>
+        </section>
+    )
+}
