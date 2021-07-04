@@ -52,7 +52,7 @@ export default function Footer() {
                     </a>
                 
                 </div>
-                <hr />
+                
                 <p className="footer__text">
                 © {new Date().getFullYear()} - {' '}
                 

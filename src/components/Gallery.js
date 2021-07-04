@@ -39,8 +39,8 @@ export default function Gallery() {
                             
                             <Carousel.Item id={data.public_id}>
                             <img
-                            width="70%" height="70%"
-                            src={`https://res.cloudinary.com/tobitgl/image/upload/${data.public_id}.jpg`}
+                            
+                            src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.65,c_scale/${data.public_id}.jpg`}
                             className="carousel"
                             alt="img"
                             />
