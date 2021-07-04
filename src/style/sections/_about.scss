@@ -20,6 +20,9 @@
   img{
     pointer-events: none;
   }
+  .aboutImg{
+    object-fit: contain;
+  }
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
