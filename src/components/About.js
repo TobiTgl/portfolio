@@ -29,7 +29,7 @@ export default function About() {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
                 <div className="about-wrapper__image">
-                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.08,c_scale/v1625401388/Portfolio/bwerbungbw_uwfwan_1_l26pij.jpg"} alt="img" width="100%" height="100%"></img>
+                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.08,c_scale/v1625401388/Portfolio/bwerbungbw_uwfwan_1_l26pij.jpg"} alt="img" width="50%" height="100%"></img>
                 </div>
             </Fade>
           </Col>
