@@ -2,13 +2,24 @@ import React, {useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-
+import axios from 'axios';
 export default function About() {
 
   
 
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [gallery, setGallery] = useState([]);
+    useEffect(() => {
+        axios.get('https://res.cloudinary.com/tobitgl/image/list/pb.json')
+            .then(res => {
+                
+                const arr = res.data.resources;
+                
+                setGallery(arr);
+                
+            });
+      }, []);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -29,7 +40,22 @@ export default function About() {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
                 <div className="about-wrapper__image">
-                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.07,c_scale/v1625401388/Portfolio/bwerbungbw_uwfwan_1_l26pij.jpg"} alt="img" width="50%" height="100%"></img>
+                {
+                    gallery.map(data => {
+                        return(
+                            
+                            
+                            <img
+                            width="50%" height="100%"
+                            src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.07,c_scale/${data.public_id}.jpg`}
+                            className="carousel"
+                            alt="img"
+                            />
+
+                        )
+                    })
+                }  
+                    
                 </div>
             </Fade>
           </Col>

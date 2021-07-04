@@ -15,15 +15,18 @@ export default function Gallery() {
                 
                 const arr = res.data.resources;
                 shuffle(arr)
-                setGallery(arr);
+                const sliceArr = arr.slice(0, 20)
+                setGallery(sliceArr);
                 
             });
       }, []);
 
       function shuffle(array) {
         array.sort(() => Math.random() - 0.5);
+        
        
       }
+      
 
     return (
         <section id="gallery">
