@@ -92,7 +92,7 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401586/Portfolio/proj_2_von_2_e4adhx.jpg"}  alt="img" ></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401586/Portfolio/proj_2_von_2_e4adhx.jpg"}  alt="img" width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
                             
@@ -165,7 +165,7 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401587/Portfolio/proj_1_von_2_tgupbl.jpg"} alt="img"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401587/Portfolio/proj_1_von_2_tgupbl.jpg"} alt="img" width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
                             
