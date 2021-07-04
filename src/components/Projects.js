@@ -92,7 +92,7 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1625401586/Portfolio/proj_2_von_2_e4adhx.jpg"}  alt="img" width="100%" height="100%"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401586/Portfolio/proj_2_von_2_e4adhx.jpg"}  alt="img" ></img>
                                 </div>
                                 </Tilt>
                             
@@ -165,7 +165,7 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1625401587/Portfolio/proj_1_von_2_tgupbl.jpg"} alt="img" width="100%" height="100%"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401587/Portfolio/proj_1_von_2_tgupbl.jpg"} alt="img"></img>
                                 </div>
                                 </Tilt>
                             
@@ -238,7 +238,8 @@ export default function Projects() {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1624884703/Portfolio/randfood_jtsasd.gif"} alt="img" width="20%" height="20%"></img>
+                                    <video autoplay="autoplay" loop="true" muted src="https://res.cloudinary.com/tobitgl/video/upload/w_0.13,c_scale/v1625411339/Portfolio/randfood_b6nhdm.mp4">
+                                    </video>
                                 </div>
                                 </Tilt>
                            

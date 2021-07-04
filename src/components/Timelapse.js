@@ -3,11 +3,13 @@ import Fade from 'react-reveal/Fade';
 import { Container} from 'react-bootstrap';
 
 
+
 export default function Timelapse() {
     return (
         <section id="timelapse">
             <div className="timelapse">
                 <Container  >
+                    
                     <Fade bottom duration={1000} delay={300} distance="0px">
                         <h2 className="section-title">Timelapse</h2>
                     </Fade>
