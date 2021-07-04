@@ -15,7 +15,7 @@ export default function Contact() {
                             
                     </p>
                     <a
-                    href="mailto:tobias.toegel@gmx.de"
+                    href="mailto:email@tobiastoegel.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-btn cta-btn--resume"
