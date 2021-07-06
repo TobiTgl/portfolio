@@ -41,13 +41,14 @@ export default function Gallery() {
                         return(
                             
                             <Carousel.Item id={data.public_id}>
+                                <div className="about-wrapper__image">
                             <img
                             
                             src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.65,c_scale/${data.public_id}.jpg`}
                             className="carousel"
                             alt="img"
                             />
-                            
+                            </div>
                         </Carousel.Item>  
                         )
                     })

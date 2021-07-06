@@ -1,14 +1,24 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import useSound from 'use-sound';
 
 
-export default function Footer() {
+export default function Footer(props) {
+
+    const [play] = useSound(
+        'https://res.cloudinary.com/tobitgl/video/upload/v1625567949/Portfolio/slimtobihigh_1_ixijsv.wav',
+        { volume: 1 }
+      );
+
+      function test(){
+          
+      }
     return (
         <footer className="footer navbar-static-bottom">
             <Container>
                 <span className="back-to-top">
-                <Link to="hero" smooth duration={1000}>
+                <Link to="header" smooth duration={1000}>
                     <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
                 </Link>
                 </span>
@@ -59,7 +69,20 @@ export default function Footer() {
                     Tobias Tögel
                
                 </p>
-
+                <Link to="header" smooth duration={1000} >
+                <div className="social-linksEm" > 
+                
+                <a
+                        
+                        href="#"
+                        rel="noopener noreferrer"
+                        onClick={() => {props.emClick(); play();}}
+                       
+                        >
+                        Ǝ
+                    </a>
+                </div>
+                </Link>
                
             </Container>
         </footer>
