@@ -38,7 +38,7 @@ export default function Gallery(props) {
           
         },
         'de': {
-            'title': 'Gallerie',
+            'title': 'Galerie',
           
       }
     }
