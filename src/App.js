@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Header from './components/Header';
@@ -12,19 +12,38 @@ import Timelapse from './components/Timelapse';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.scss';
 
+
 function App() {
+
+  const [emActive, setEmActive] = useState(false)
+  const [languageSet, setLanguageSet] = useState('en')
+  
+  const langClick=()=> {
+    if(languageSet=='en') {
+      setLanguageSet('de')
+    }else{
+      setLanguageSet('en')
+    }
+    
+  }
+
+    function emClick(){
+    
+        setEmActive(true);
+        setTimeout(()=>setEmActive(false), 7000);
+    }
 
   return (
     <>
-    <Header />
-    <Hero />
-    <About />
-    <Projects />
-    <Gallery />
-    <Timelapse />
-    <Contact />
+    <Header languageSet={languageSet} langClick={langClick}/>
+    <Hero emActive={emActive} languageSet={languageSet} />
+    <About languageSet={languageSet}/>
+    <Projects languageSet={languageSet}/>
+    <Gallery languageSet={languageSet}/>
+    <Timelapse languageSet={languageSet}/>
+    <Contact languageSet={languageSet}/>
     
-    <Footer />
+    <Footer emClick={emClick} />
     
     
     </>

@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-export default function Gallery() {
+export default function Gallery(props) {
     
     const [gallery, setGallery] = useState([]);
     useEffect(() => {
@@ -27,12 +27,27 @@ export default function Gallery() {
        
       }
       
+      const getTranslation = (lang, text) => {
+            
+        return translations[lang][text];
+      }
+    
+      const translations = {
+        'en': {
+          'title': 'Gallery',
+          
+        },
+        'de': {
+            'title': 'Gallerie',
+          
+      }
+    }
 
     return (
         <section id="gallery">
             <Container className="gallery">
                 <Fade bottom duration={1000} delay={300} distance="0px">
-                    <h2 className="section-title">Gallery</h2>
+                    <h2 className="section-title">{getTranslation(props.languageSet, 'title')}</h2>
                 </Fade>
                 <Fade bottom duration={1000} delay={500} distance="0px">
                 <Carousel >
@@ -41,13 +56,14 @@ export default function Gallery() {
                         return(
                             
                             <Carousel.Item id={data.public_id}>
+                                <div className="about-wrapper__image">
                             <img
                             
                             src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.65,c_scale/${data.public_id}.jpg`}
                             className="carousel"
                             alt="img"
                             />
-                            
+                            </div>
                         </Carousel.Item>  
                         )
                     })
