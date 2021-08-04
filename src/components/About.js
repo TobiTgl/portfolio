@@ -75,8 +75,8 @@ export default function About(props) {
     'de': {
         'title': 'Über mich',
       'txt1': 'Hallo, ich bin Tobias, '+ageSet+' Jahre alt und studiere Informationsmanagement in Ulm um Ulm und um Ulm herum.',
-      'txt2': 'Auf dieser Website präsentiere ich einige meiner Projekte an welchen ich während meiner studienzeit oder auch während meiner Freizeut arbeite bzw. gearbeitet habe.',
-      'txt3': 'In meiner Freizeit beschäftige ich mich gerne mit der Fotografie. Im Gallerie und Zeitraffer Bereich finden sich Fotos und Zeitraffer die ich erstellt habe.',
+      'txt2': 'Auf dieser Website präsentiere ich einige meiner Projekte, an welchen ich während meiner Studienzeit oder auch während meiner Freizeit arbeite bzw. gearbeitet habe.',
+      'txt3': 'In meiner Freizeit beschäftige ich mich gerne mit der Fotografie. Im Galerie und Zeitraffer Bereich finden sich Fotos und Zeitraffer, die ich erstellt habe.',
       'button': 'Kontakt'
     }
   }
