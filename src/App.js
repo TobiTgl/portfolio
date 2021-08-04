@@ -16,7 +16,17 @@ import './style/main.scss';
 function App() {
 
   const [emActive, setEmActive] = useState(false)
+  const [languageSet, setLanguageSet] = useState('en')
   
+  const langClick=()=> {
+    if(languageSet=='en') {
+      setLanguageSet('de')
+    }else{
+      setLanguageSet('en')
+    }
+    
+  }
+
     function emClick(){
     
         setEmActive(true);
@@ -25,13 +35,13 @@ function App() {
 
   return (
     <>
-    <Header />
-    <Hero emActive={emActive} />
-    <About />
-    <Projects />
-    <Gallery />
-    <Timelapse />
-    <Contact />
+    <Header languageSet={languageSet} langClick={langClick}/>
+    <Hero emActive={emActive} languageSet={languageSet} />
+    <About languageSet={languageSet}/>
+    <Projects languageSet={languageSet}/>
+    <Gallery languageSet={languageSet}/>
+    <Timelapse languageSet={languageSet}/>
+    <Contact languageSet={languageSet}/>
     
     <Footer emClick={emClick} />
     

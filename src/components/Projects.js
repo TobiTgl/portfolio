@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 
 
-export default function Projects() {
+export default function Projects(props) {
     
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -20,12 +20,35 @@ export default function Projects() {
       setIsDesktop(false);
     }
   }, []);
+
+  const getTranslation = (lang, text) => {
+            
+    return translations[lang][text];
+  }
+
+  const translations = {
+    'en': {
+      'title': 'Projects',
+      'txt1': 'The magma esports web application is a service that displays match information and results of the latest CS:GO & League of Legends esports matches. The application was developed as part of the web application course during my studies at the OAMK in Oulu in collaboration with my project group consisting of 4 members. The project was divided into frontend & backend developed including API & database integration.',
+      'txt2': 'GreenFuel is the online platform of a fictional EV charging provider. It is another application that I developed during my studies in Oulu. It was an individual graded project that included frontend & backend development. This project introduced me to web development & javascript programming.',
+      'txt3': 'Have you ever struggled to decide what to cook for your next meal? I often faced that problem in the past which is why I decided to develop the food randomizer. Simply save meals you can cook in the app and tap on the random button which randomly chooses a meal for you with a slot machine-like animation.'
+      
+    },
+    'de': {
+        'title': 'Projekte',
+      'txt1': 'Die magma esports Web-App listet Informationen und Ergebnisse von aktuellen CS:GO & League of Legends auf. Das magma esports Projekt war ein Teil des Web-application Kurses während meines Auslandsstudiums an der OAMK in Oulu. Die App wurde von mir in Zusammenarbeit mit meiner Projektgruppe, bestehend aus 4 Personen entwickelt. Das Projekt war unterteilt in frontend und backend Entwicklung mit Datenbank Integration.',
+      'txt2': 'GreenFuel ist eine fiktionale Onlineplattform für ein EV Ladesystem. Dies ist eine weitere App, die ich während meines Studiums in Oulu entwickelt habe. Das Projekt wurde individuell bearbeitet und bestand aus frontend & backend Entwicklung. Durch das Erstellen von GreenFuel wurde ich in die Web- und Javascript Entwicklung eingeführt.',
+      'txt3': 'Hattest du jemals das Problem, dich nicht entscheiden zu können, was du als Nächstes kochen möchtest? Um dieses Problem zu lösen, entwickelte ich den food randomizer. Speichere einfach die Gerichte ein, die du kochen kannst und starte den randomizer. Die slotmachineartige Animation wählt zufällig das nächste Gericht für dich aus.'
+
+    }
+  }
+  
     return (
         <section id="projects">
             <Container>
                 <div className="project-wrapper">
                     <Fade bottom duration={1000} delay={300} distance="0px">
-                        <h2 className="section-title">Projects</h2>
+                        <h2 className="section-title">{getTranslation(props.languageSet, 'title')}</h2>
                     </Fade>
                     
                     <Row >
@@ -41,8 +64,7 @@ export default function Projects() {
                             <h3 className="project-wrapper__text-title">{'Magma Esports'}</h3>
                             <div>
                                 <p>
-                                {
-                                    'The magma esports web application is a service that displays match information and results of the latest CS:GO & League of Legends esports matches. The application was developed as part of the web application course during my studies at the OAMK in Oulu in collaboration with my project group consisting of 4 members. The project was divided into frontend & backend developed including API & database integration.'}
+                                    {getTranslation(props.languageSet, 'txt1')}
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>
@@ -113,9 +135,7 @@ export default function Projects() {
                             <h3 className="project-wrapper__text-title">{'GreenFuel'}</h3>
                             <div>
                                 <p>
-                                {
-                                    'GreenFuel is the online platform of a fictional EV charging provider. It is another application that I developed during my studies in Oulu. It was an individual graded project that included frontend & backend development. This project introduced me to web development & javascript programming.'
-                                    }
+                                {getTranslation(props.languageSet, 'txt2')}
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>
@@ -186,9 +206,7 @@ export default function Projects() {
                             <h3 className="project-wrapper__text-title">{'Food Randomizer'}</h3>
                             <div>
                                 <p>
-                                {
-                                    'Have you ever struggled to decide what to cook for your next meal? I often faced that problem in the past which is why I decided to develop the food randomizer. Simply save meals you can cook in the app and tap on the random button which randomly chooses a meal for you with a slot machine-like animation.'
-                                    }
+                                {getTranslation(props.languageSet, 'txt3')}
                                 </p>
                                 <p className="mb-4">{ ''}</p>
                             </div>

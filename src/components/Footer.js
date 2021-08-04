@@ -14,6 +14,7 @@ export default function Footer(props) {
       function scrollToToop(){
         scroll.scrollToTop();
       }
+
     return (
         <footer className="footer navbar-static-bottom">
             <Container>
