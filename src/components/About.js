@@ -99,7 +99,7 @@ export default function About(props) {
                           
                           <img
                           width="50%" height="100%"
-                          src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.07,c_scale/${data.public_id}.jpg`}
+                          src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.15,c_scale/${data.public_id}.jpg`}
                           className="carousel"
                           alt="img"
                           />
