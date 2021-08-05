@@ -44,7 +44,7 @@ export default function Hero(props) {
           }
         }
 
-        if(props.emActive == true){
+        if(props.emActive === true){
           return (
             <section id="hero" className="jumbotron">
           <Container>
