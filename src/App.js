@@ -16,12 +16,15 @@ import './style/main.scss';
 function App() {
 
   const [emActive, setEmActive] = useState(false)
-  const [languageSet, setLanguageSet] = useState('en')
+  const [languageSet, setLanguageSet] = useState(localStorage.getItem('language')||'en')
   
+ 
   const langClick=()=> {
-    if(languageSet=='en') {
+    if(languageSet==='en') {
+      localStorage.setItem('language', 'de');
       setLanguageSet('de')
     }else{
+      localStorage.setItem('language', 'en');
       setLanguageSet('en')
     }
     

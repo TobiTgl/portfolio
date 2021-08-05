@@ -44,13 +44,13 @@ export default function About(props) {
     const date = (new Date().toISOString()).substring(0,10)
     
 
-    if(parseInt(date.substring(5,7)) == 3 && parseInt(date.substring(8,10)) >= 30){
+    if(parseInt(date.substring(5,7)) === 3 && parseInt(date.substring(8,10)) >= 30){
       const dateAge = (new Date().getFullYear())-1997
       setageSet(dateAge)
     }else if(parseInt(date.substring(5,7)) < 3){
       const dateAge = (new Date().getFullYear())-1998
       setageSet(dateAge)
-    }else if(parseInt(date.substring(5,7)) == 3 && parseInt(date.substring(8,10)) < 30){
+    }else if(parseInt(date.substring(5,7)) === 3 && parseInt(date.substring(8,10)) < 30){
       const dateAge = (new Date().getFullYear())-1998
       setageSet(dateAge)
     }else if(parseInt(date.substring(5,7)) >3){
