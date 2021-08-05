@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import axios from 'axios';
+import { Parallax, Background } from 'react-parallax';
 export default function About(props) {
 
   
@@ -84,7 +85,7 @@ export default function About(props) {
  
     return (
       <section id="about">
-    <Container>
+    <Container>   
       <Fade bottom duration={1000} delay={300} distance="0px">
           <h2 className="section-title">{getTranslation(props.languageSet, 'title')}</h2>
       </Fade>
@@ -92,21 +93,24 @@ export default function About(props) {
         <Col md={6} sm={12}>
           <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
+              
               {
                   gallery.map(data => {
                       return(
+                        <Parallax blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
+                        <p style={{ opacity: '0'}}>Content goes here. Parallax height grows .</p>
+                        <Background className="custom-bg">
+                            <img src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.12,c_scale/${data.public_id}.jpg`} alt="fill murray" />
+                        </Background>
+                        <div style={{ height: '310px'}} />
+                    </Parallax>
                           
                           
-                          <img
-                          width="50%" height="100%"
-                          src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.15,c_scale/${data.public_id}.jpg`}
-                          className="carousel"
-                          alt="img"
-                          />
 
                       )
                   })
               }  
+              
                   
               </div>
           </Fade>

@@ -16,7 +16,7 @@ export default function Contact(props) {
           
         },
         'de': {
-            'txt1': 'Gerne können Sie mich kontaktieren!',
+            'txt1': '',
             'button': 'Kontakt',
           
       }
