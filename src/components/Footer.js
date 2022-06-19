@@ -70,18 +70,9 @@ export default function Footer(props) {
                     Tobias Tögel
                
                 </p>
-                <Link duration={1000} >
+                <Link to="header" duration={1000} onClick={() => {props.emClick(); play(); scrollToToop()}}>
                 <div className="social-linksEm" > 
-                
-                <a
-                        
-                        href="#"
-                        rel="noopener noreferrer"
-                        onClick={() => {props.emClick(); play(); scrollToToop()}}
-                       
-                        >
-                        Ǝ
-                    </a>
+                    Ǝ
                 </div>
                 </Link>
                
