@@ -28,7 +28,8 @@ export default function Freelance(props) {
           'title': 'Freelance Projects',
           'publications': 'Publications',
           'SWP': 'Südwestpresse',
-          'SWPtxt': 'Social media post on SWP instagram channel. (Startrails above Ulm city captured from the Oberberghof viewpoint)',
+          'SWPtxt': 'Social media post on SWP instagram channel.',
+          'SWPLink': '(Startrails above Ulm city captured from the Oberberghof viewpoint)',
           'LraKrseTxt': 'Publications in three northern German Newspapers.',
           'Article': ' (Auslandssemester in Finnland begann mit Quarantäne written by Tatjana Gettkowski) ',
           'here': 'Photo metadata',
@@ -40,7 +41,8 @@ export default function Freelance(props) {
             'title': 'Freelance Projekte',
             'publications': 'Publikationen',
             'SWP': 'Südwest Presse',
-            'SWPtxt': 'Beitrag auf dem Social-Media-Kanal der Südwest Presse. (Startrails über Ulm aufgenommen vom Oberberghof Aussichtspunkt)',
+            'SWPtxt': 'Beitrag auf dem Social-Media-Kanal der Südwest Presse.',
+            'SWPLink': '(Startrails über Ulm aufgenommen vom Oberberghof Aussichtspunkt)',
             'LraKrseTxt': 'Bilder zu Beiträgen in drei Norddeutschen Zeitungen.',
             'Article': ' (Auslandssemester in Finnland begann mit Quarantäne von Tatjana Gettkowski)',
             'here': 'Foto Metadaten',
@@ -109,6 +111,9 @@ export default function Freelance(props) {
                                     <p>
                                         {getTranslation(props.languageSet, 'SWPtxt')}
                                     </p>
+                                    <a rel="noreferrer" href="https://www.instagram.com/p/CRGVSFgqlaV" target="_blank"> 
+                                    {getTranslation(props.languageSet, 'SWPLink')}
+                                    </a>
                                     <p className="mb-4">{ ''}</p>
                                 </div>
                                 {/*<a
