@@ -263,7 +263,7 @@ export default function Freelance(props) {
                                     <p>
                                         {getTranslation(props.languageSet, 'TTText')}
                                     </p>
-                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" rel="noreferrer" target="_blank">
+                                    <a href="https://tobiastoegel.com/" rel="noreferrer" target="_blank">
                                     {getTranslation(props.languageSet, 'TTLink')}
                                     </a>
                                     <p className="mb-4">{ ''}</p>
