@@ -9,8 +9,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import Timelapse from './components/Timelapse';
+import Freelance from './components/Freelance';
+import FPV from './components/FPV';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.scss';
+
+import ReactPlayer from 'react-player'
 
 
 function App() {
@@ -35,6 +39,7 @@ function App() {
         setEmActive(true);
         setTimeout(()=>setEmActive(false), 7000);
     }
+    
 
   return (
     <>
@@ -42,7 +47,9 @@ function App() {
     <Hero emActive={emActive} languageSet={languageSet} />
     <About languageSet={languageSet}/>
     <Projects languageSet={languageSet}/>
+    <Freelance languageSet={languageSet}/>
     <Gallery languageSet={languageSet}/>
+    <FPV/>
     <Timelapse languageSet={languageSet}/>
     <Contact languageSet={languageSet}/>
     

@@ -30,6 +30,7 @@ export default function Header(props) {
             'en': {
               'About': 'About',
               'Projects': 'Projects',
+              'Freelance': 'Freelance',
               'Gallery': 'Gallery',
               'Timelapse': 'Timelapse',
               'Contact': 'Contact',
@@ -38,6 +39,7 @@ export default function Header(props) {
             'de': {
                 'About': 'Über mich',
                 'Projects': 'Projekte',
+                'Freelance': 'Freelance',
                 'Gallery': 'Gallerie',
                 'Timelapse': 'Zeitraffer',
                 'Contact': 'Kontakt',
@@ -62,6 +64,13 @@ export default function Header(props) {
                          <Navbar.Text>
                              <Link to="projects" smooth duration={1000}>
                                  <div className="headertext">{getTranslation(props.languageSet, 'Projects')}</div>
+                             </Link>
+                            
+                         </Navbar.Text>
+
+                         <Navbar.Text>
+                             <Link to="freelance" smooth duration={1000}>
+                                 <div className="headertext">{getTranslation(props.languageSet, 'Freelance')}</div>
                              </Link>
                             
                          </Navbar.Text>

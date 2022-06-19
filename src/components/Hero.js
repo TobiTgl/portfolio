@@ -73,6 +73,7 @@ export default function Hero(props) {
     
         }else{
       return (
+        
         <section id="hero" className="jumbotron" >
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
