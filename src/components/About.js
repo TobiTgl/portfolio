@@ -69,14 +69,14 @@ export default function About(props) {
     'en': {
       'title': 'About',
       'txt1': 'Hello, my name is Tobias and I am a technology and management student from the south of Germany.',
-      'txt2': 'On this website, I am showcasing some of the projects I was working on during my studies as well as some free time projects.',
+      'txt2': 'On this website, I am showcasing some of the projects I was working on during my studies as well as some free time/freelance projects.',
       'txt3': 'Besides that, I have a great passion for photography. You can find a selection of my photos in the gallery & timelapse section.',
       'button': 'Contact'
     },
     'de': {
         'title': 'Über mich',
       'txt1': 'Hallo, ich bin Tobias, '+ageSet+' Jahre alt und studiere Informationsmanagement in Ulm um Ulm und um Ulm herum.',
-      'txt2': 'Auf dieser Website präsentiere ich einige meiner Projekte, an welchen ich während meiner Studienzeit oder auch während meiner Freizeit arbeite bzw. gearbeitet habe.',
+      'txt2': 'Auf dieser Website präsentiere ich einige meiner Projekte, an welchen ich während meiner Studienzeit oder auch während meiner Freizeit/als Freelancer arbeite bzw. gearbeitet habe.',
       'txt3': 'In meiner Freizeit beschäftige ich mich gerne mit der Fotografie. Im Galerie und Zeitraffer Bereich finden sich Fotos und Zeitraffer, die ich erstellt habe.',
       'button': 'Kontakt'
     }
@@ -97,7 +97,7 @@ export default function About(props) {
               {
                   gallery.map(data => {
                       return(
-                        <Parallax blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
+                        <Parallax key={data.public_id} blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
                         <p style={{ opacity: '0'}}>Content goes here. Parallax height grows .</p>
                         <Background className="custom-bg">
                             <img src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.12,c_scale/${data.public_id}.jpg`} alt="fill murray" />
