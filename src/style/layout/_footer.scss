@@ -59,22 +59,14 @@
 }
 .social-linksEm {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  color: rgb(48, 48, 48);
+  font-size: 2rem;
+  margin-bottom: -3rem;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+  cursor: pointer;
 
-  a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #111111;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: -5rem;
-    transition: all 0.2s ease-in;
-
-    
-  }
 }
 
 .back-to-top i {

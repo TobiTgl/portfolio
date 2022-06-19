@@ -14,13 +14,13 @@ export default function FPV() {
       }, []);
     return (
         <section id="fpv">
-            <Container className="fpv">
+            <Container className="fpv" fluid>
                 <div className="fpv-wrapper"> 
                     <h2 className="section-title">FPV</h2>
                     {
                     video.map(data => {
                         return(
-                        <ReactPlayer url={`https://res.cloudinary.com/tobitgl/video/upload/${data.public_id}.mp4`} playing='true' volume='0' loop='true' width='100%' height='100%'/>   
+                        <ReactPlayer key={data.public_id} url={`https://res.cloudinary.com/tobitgl/video/upload/${data.public_id}.mp4`} playing={true} volume={0} loop={true} width='100%' height='100%'/>   
                         )
                     })
                 } 

@@ -1,5 +1,5 @@
 
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Header from './components/Header';
@@ -13,8 +13,6 @@ import Freelance from './components/Freelance';
 import FPV from './components/FPV';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.scss';
-
-import ReactPlayer from 'react-player'
 
 
 function App() {

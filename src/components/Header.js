@@ -32,6 +32,7 @@ export default function Header(props) {
               'Projects': 'Projects',
               'Freelance': 'Freelance',
               'Gallery': 'Gallery',
+              'fpv': 'FPV',
               'Timelapse': 'Timelapse',
               'Contact': 'Contact',
               'Flag': 'https://res.cloudinary.com/tobitgl/image/upload/v1628092108/Portfolio/germany_qdxk0a.png'
@@ -41,6 +42,7 @@ export default function Header(props) {
                 'Projects': 'Projekte',
                 'Freelance': 'Freelance',
                 'Gallery': 'Gallerie',
+                'fpv': 'FPV',
                 'Timelapse': 'Zeitraffer',
                 'Contact': 'Kontakt',
                 'Flag': 'https://res.cloudinary.com/tobitgl/image/upload/v1628092148/Portfolio/united-kingdom_jual6z.png'
@@ -78,6 +80,12 @@ export default function Header(props) {
                          <Navbar.Text>
                              <Link to="gallery" smooth duration={1000}>
                                  <div className="headertext">{getTranslation(props.languageSet, 'Gallery')}</div>
+                             </Link>
+                             
+                         </Navbar.Text>
+                         <Navbar.Text>
+                             <Link to="fpv" smooth duration={1000}>
+                                 <div className="headertext">{getTranslation(props.languageSet, 'fpv')}</div>
                              </Link>
                              
                          </Navbar.Text>

@@ -97,7 +97,7 @@ export default function About(props) {
               {
                   gallery.map(data => {
                       return(
-                        <Parallax blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
+                        <Parallax key={data.public_id} blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
                         <p style={{ opacity: '0'}}>Content goes here. Parallax height grows .</p>
                         <Background className="custom-bg">
                             <img src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.12,c_scale/${data.public_id}.jpg`} alt="fill murray" />

@@ -30,14 +30,14 @@ export default function Projects(props) {
     'en': {
       'title': 'Projects',
       'txt1': 'The magma esports web application is a service that displays match information and results of the latest CS:GO & League of Legends esports matches. The application was developed as part of the web application course during my studies at the OAMK in Oulu in collaboration with my project group consisting of 4 members. The project was divided into frontend & backend developed including API & database integration.',
-      'txt2': 'GreenFuel is the online platform of a fictional EV charging provider. It is another application that I developed during my studies in Oulu. It was an individual graded project that included frontend & backend development. This project introduced me to web development & javascript programming.',
+      'txt2': 'I was working as a full-stack developer during my internship and time as a working student at Capgemini Germany. Projects included web applications for renowned automotive and healthcare manufacturers.',
       'txt3': 'Have you ever struggled to decide what to cook for your next meal? I often faced that problem in the past which is why I decided to develop the food randomizer. Simply save meals you can cook in the app and tap on the random button which randomly chooses a meal for you with a slot machine-like animation.'
       
     },
     'de': {
         'title': 'Projekte',
       'txt1': 'Die magma esports Web-App listet Informationen und Ergebnisse von aktuellen CS:GO & League of Legends auf. Das magma esports Projekt war ein Teil des Web-application Kurses während meines Auslandsstudiums an der OAMK in Oulu. Die App wurde von mir in Zusammenarbeit mit meiner Projektgruppe, bestehend aus 4 Personen entwickelt. Das Projekt war unterteilt in frontend und backend Entwicklung mit Datenbank Integration.',
-      'txt2': 'GreenFuel ist eine fiktionale Onlineplattform für ein EV Ladesystem. Dies ist eine weitere App, die ich während meines Studiums in Oulu entwickelt habe. Das Projekt wurde individuell bearbeitet und bestand aus frontend & backend Entwicklung. Durch das Erstellen von GreenFuel wurde ich in die Web- und Javascript Entwicklung eingeführt.',
+      'txt2': 'Während meines Praktikums und meiner Anstellung als Werkstudent bei der Capgemini Deutschland GmbH arbeitete ich als FullStack Entwickler in Kundenprojekten. Zu den Kunden gehörten nahmhafte Hersteller aus der Automobilbranche und dem Gesundheitswesen.',
       'txt3': 'Hattest du jemals das Problem, dich nicht entscheiden zu können, was du als Nächstes kochen möchtest? Um dieses Problem zu lösen, entwickelte ich den food randomizer. Speichere einfach die Gerichte ein, die du kochen kannst und starte den randomizer. Die slotmachineartige Animation wählt zufällig das nächste Gericht für dich aus.'
 
     }
@@ -50,6 +50,77 @@ export default function Projects(props) {
                     <Fade bottom duration={1000} delay={300} distance="0px">
                         <h2 className="section-title">{getTranslation(props.languageSet, 'title')}</h2>
                     </Fade>
+                    <Row >
+                        <Col lg={4} sm={12}>
+                        <Fade
+                            left={isDesktop}
+                            bottom={isMobile}
+                            duration={1000}
+                            delay={500}
+                            distance="30px"
+                        >
+                            <div className="project-wrapper__text">
+                            <h3 className="project-wrapper__text-title">{'Capgemini'}</h3>
+                            <div>
+                                <p>
+                                {getTranslation(props.languageSet, 'txt2')}
+                                </p>
+                                <p className="mb-4">{ ''}</p>
+                            </div>
+                            {/*<a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cta-btn cta-btn--hero"
+                                href={'#!'}
+                            >
+                                See Live
+                            </a>
+
+                            { (
+                                <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cta-btn text-color-main"
+                                
+                                >
+                                Source Code
+                                </a>
+                            )}*/}
+                            </div>
+                        </Fade>
+                        </Col>
+                        <Col lg={8} sm={12}>
+                        <Fade
+                            right={isDesktop}
+                            bottom={isMobile}
+                            duration={1000}
+                            delay={1000}
+                            distance="30px"
+                        >
+                            <div className="project-wrapper__image">
+                            
+                                <Tilt
+                                options={{
+                                    reverse: false,
+                                    max: 8,
+                                    perspective: 1000,
+                                    scale: 1,
+                                    speed: 300,
+                                    transition: true,
+                                    axis: null,
+                                    reset: true,
+                                    easing: 'cubic-bezier(.03,.98,.52,.99)',
+                                }}
+                                >
+                                <div data-tilt className="thumbnail rounded">
+                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.2,c_scale/v1655632319/Portfolio/Capgemini_Logo_Color_RGB_ir21dp.png"} alt="img" width="100%" height="100%"></img>
+                                </div>
+                                </Tilt>
+                            
+                            </div>
+                        </Fade>
+                        </Col>
+                    </Row>
                     
                     <Row >
                         <Col lg={4} sm={12}>
@@ -132,77 +203,6 @@ export default function Projects(props) {
                             distance="30px"
                         >
                             <div className="project-wrapper__text">
-                            <h3 className="project-wrapper__text-title">{'GreenFuel'}</h3>
-                            <div>
-                                <p>
-                                {getTranslation(props.languageSet, 'txt2')}
-                                </p>
-                                <p className="mb-4">{ ''}</p>
-                            </div>
-                            {/*<a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cta-btn cta-btn--hero"
-                                href={'#!'}
-                            >
-                                See Live
-                            </a>
-
-                            { (
-                                <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cta-btn text-color-main"
-                                
-                                >
-                                Source Code
-                                </a>
-                            )}*/}
-                            </div>
-                        </Fade>
-                        </Col>
-                        <Col lg={8} sm={12}>
-                        <Fade
-                            right={isDesktop}
-                            bottom={isMobile}
-                            duration={1000}
-                            delay={1000}
-                            distance="30px"
-                        >
-                            <div className="project-wrapper__image">
-                            
-                                <Tilt
-                                options={{
-                                    reverse: false,
-                                    max: 8,
-                                    perspective: 1000,
-                                    scale: 1,
-                                    speed: 300,
-                                    transition: true,
-                                    axis: null,
-                                    reset: true,
-                                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                                }}
-                                >
-                                <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401587/Portfolio/proj_1_von_2_tgupbl.jpg"} alt="img" width="100%" height="100%"></img>
-                                </div>
-                                </Tilt>
-                            
-                            </div>
-                        </Fade>
-                        </Col>
-                    </Row>
-                    <Row >
-                        <Col lg={4} sm={12}>
-                        <Fade
-                            left={isDesktop}
-                            bottom={isMobile}
-                            duration={1000}
-                            delay={500}
-                            distance="30px"
-                        >
-                            <div className="project-wrapper__text">
                             <h3 className="project-wrapper__text-title">{'Food Randomizer'}</h3>
                             <div>
                                 <p>
@@ -256,7 +256,7 @@ export default function Projects(props) {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <video autoplay="autoplay" loop="true" muted src="https://res.cloudinary.com/tobitgl/video/upload/w_0.13,c_scale/v1625411339/Portfolio/randfood_b6nhdm.mp4">
+                                    <video autoPlay="autoplay" loop={true} muted src="https://res.cloudinary.com/tobitgl/video/upload/w_0.13,c_scale/v1625411339/Portfolio/randfood_b6nhdm.mp4">
                                     </video>
                                 </div>
                                 </Tilt>

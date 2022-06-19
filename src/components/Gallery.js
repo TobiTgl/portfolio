@@ -55,7 +55,7 @@ export default function Gallery(props) {
                     gallery.map(data => {
                         return(
                             
-                            <Carousel.Item id={data.public_id}>
+                            <Carousel.Item key={data.public_id} id={data.public_id}>
                                 <div className="about-wrapper__image">
                             <img
                             

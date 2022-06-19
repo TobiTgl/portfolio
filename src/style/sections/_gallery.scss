@@ -8,9 +8,7 @@
     color: $white-color;
     height: 100%;
     border-top: 0px;
-   
-    padding-bottom: 10%;
-  
+     
     @include respond(tab-land) {
       height: 100%;
       -webkit-clip-path: none;

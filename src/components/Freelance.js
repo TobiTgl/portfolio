@@ -2,7 +2,6 @@ import React, {useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Tilt from 'react-tilt';
-import InstagramEmbed from 'react-instagram-embed';
 
 export default function Freelance(props) {
 
@@ -87,7 +86,7 @@ export default function Freelance(props) {
                                     }}
                                 >
                                     <div data-tilt >
-                                        <a className="swp" href="https://www.instagram.com/p/CRGVSFgqlaV" target="_blank">
+                                        <a className="swp" rel="noreferrer" href="https://www.instagram.com/p/CRGVSFgqlaV" target="_blank">
                                         <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1655385042/Portfolio/gallery/Screenshot_2022-06-16_151004_gjthtb.png"}  alt="img" width="10%" height="10%"></img>
                                         </a>
                                     </div>
@@ -178,19 +177,19 @@ export default function Freelance(props) {
                             >
                                 <div className="freelance-wrapper__text">
                                 <h1 className="freelance-wrapper__text-title">
-                                    <a className="atag" href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank">General Anzeiger, </a>
-                                    <a className="atag" href="https://www.oz-online.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Ostfriesen Zeitung &</a>
-                                    <a className="atag" href="https://www.borkumer-zeitung.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Borkumer Zeitung</a>
+                                    <a className="atag" rel="noreferrer" href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank">General Anzeiger, </a>
+                                    <a className="atag" rel="noreferrer" href="https://www.oz-online.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Ostfriesen Zeitung &</a>
+                                    <a className="atag" rel="noreferrer" href="https://www.borkumer-zeitung.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Borkumer Zeitung</a>
                                 </h1>
                                 <div>
                                     <p>
                                         {getTranslation(props.languageSet, 'LraKrseTxt')}
                                     </p>
-                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank">
+                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" rel="noreferrer" target="_blank">
                                     {getTranslation(props.languageSet, 'Article')}
                                     </a>
                                     <p></p>
-                                    <a href="https://res.cloudinary.com/tobitgl/image/upload/v1655387392/Portfolio/gallery/Screenshot_2022-06-16_154933_fzxzho.png" target="_blank">{getTranslation(props.languageSet, 'here')}</a>
+                                    <a href="https://res.cloudinary.com/tobitgl/image/upload/v1655387392/Portfolio/gallery/Screenshot_2022-06-16_154933_fzxzho.png" rel="noreferrer" target="_blank">{getTranslation(props.languageSet, 'here')}</a>
 
                                     <p className="mb-4">{ ''}</p>
                                 </div>
@@ -264,7 +263,7 @@ export default function Freelance(props) {
                                     <p>
                                         {getTranslation(props.languageSet, 'TTText')}
                                     </p>
-                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank">
+                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" rel="noreferrer" target="_blank">
                                     {getTranslation(props.languageSet, 'TTLink')}
                                     </a>
                                     <p className="mb-4">{ ''}</p>
