@@ -25,7 +25,7 @@ export default function Freelance(props) {
 
       const translations = {
         'en': {
-          'title': 'Freelance Projects',
+          'title': 'Other Projects',
           'publications': 'Publications',
           'SWP': 'Südwestpresse',
           'SWPtxt': 'Social media post on SWP instagram channel.',
@@ -38,7 +38,7 @@ export default function Freelance(props) {
           'TTLink': 'more',
         },
         'de': {
-            'title': 'Freelance Projekte',
+            'title': 'Andere Projekte',
             'publications': 'Publikationen',
             'SWP': 'Südwest Presse',
             'SWPtxt': 'Beitrag auf dem Social-Media-Kanal der Südwest Presse.',
@@ -139,88 +139,7 @@ export default function Freelance(props) {
                             </Fade>
                         </Col>
                     </Row>
-                    <Row >
-                    <Col lg={8} sm={12}>
-                        <Fade
-                            right={isDesktop}
-                            bottom={isMobile}
-                            duration={1000}
-                            delay={1000}
-                            distance="30px"
-                        >
-                            <div className="freelance-wrapper__image">
-                                    
-                                <Tilt
-                                    options={{
-                                        reverse: false,
-                                        max: 8,
-                                        perspective: 1000,
-                                        scale: 1,
-                                        speed: 300,
-                                        transition: true,
-                                        axis: null,
-                                        reset: true,
-                                        easing: 'cubic-bezier(.03,.98,.52,.99)',
-                                    }}
-                                >
-                                    <div data-tilt className="thumbnail rounded">
-                                    <img className="swp" src={"https://res.cloudinary.com/tobitgl/image/upload/v1655386738/Portfolio/gallery/auroroatimelapse28092020-131_jlu154.jpg"}  alt="img" ></img>
-
-                                    </div>
-                                </Tilt>
-                                    
-                            </div>
-                        </Fade>
-                        </Col>
-                        <Col lg={4} sm={12}>
-                            <Fade
-                                left={isDesktop}
-                                bottom={isMobile}
-                                duration={1000}
-                                delay={500}
-                                distance="30px"
-                            >
-                                <div className="freelance-wrapper__text">
-                                <h1 className="freelance-wrapper__text-title">
-                                    <a className="atag" rel="noreferrer" href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank">General Anzeiger, </a>
-                                    <a className="atag" rel="noreferrer" href="https://www.oz-online.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Ostfriesen Zeitung &</a>
-                                    <a className="atag" rel="noreferrer" href="https://www.borkumer-zeitung.de/artikel/941924/Auslandssemester-in-Finnland-begann-mit-Quarantaene" target="_blank"> Borkumer Zeitung</a>
-                                </h1>
-                                <div>
-                                    <p>
-                                        {getTranslation(props.languageSet, 'LraKrseTxt')}
-                                    </p>
-                                    <a href="https://www.ga-online.de/artikel/942578/Auslandssemester-in-Finnland-begann-mit-Quarantaene" rel="noreferrer" target="_blank">
-                                    {getTranslation(props.languageSet, 'Article')}
-                                    </a>
-                                    <p></p>
-                                    <a href="https://res.cloudinary.com/tobitgl/image/upload/v1655387392/Portfolio/gallery/Screenshot_2022-06-16_154933_fzxzho.png" rel="noreferrer" target="_blank">{getTranslation(props.languageSet, 'here')}</a>
-
-                                    <p className="mb-4">{ ''}</p>
-                                </div>
-                                {/*<a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn cta-btn--hero"
-                                    href={'#!'}
-                                >
-                                    See Live
-                                </a>
-
-                                { (
-                                    <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn text-color-main"
-                                    
-                                    >
-                                    Source Code
-                                    </a>
-                                )}*/}
-                                </div>
-                            </Fade>
-                        </Col>
-                    </Row>
+                    
                     <Row >
                     <Col lg={8} sm={12}>
                         <Fade
