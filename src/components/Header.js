@@ -69,13 +69,6 @@ export default function Header(props) {
                              </Link>
                             
                          </Navbar.Text>
-
-                         <Navbar.Text>
-                             <Link to="freelance" smooth duration={1000}>
-                                 <div className="headertext">{getTranslation(props.languageSet, 'Freelance')}</div>
-                             </Link>
-                            
-                         </Navbar.Text>
          
                          <Navbar.Text>
                              <Link to="gallery" smooth duration={1000}>
