@@ -1,4 +1,3 @@
-
 import React,{useState} from 'react';
 import './App.css';
 import Hero from './components/Hero';
@@ -13,14 +12,15 @@ import Freelance from './components/Freelance';
 import FPV from './components/FPV';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.scss';
-
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, get, child } from "firebase/database";
 
 function App() {
-
+  require('dotenv').config()
+  let firebase = require('./components/Firebase.js');
   const [emActive, setEmActive] = useState(false)
   const [languageSet, setLanguageSet] = useState(localStorage.getItem('language')||'en')
   
- 
   const langClick=()=> {
     if(languageSet==='en') {
       localStorage.setItem('language', 'de');
@@ -29,15 +29,15 @@ function App() {
       localStorage.setItem('language', 'en');
       setLanguageSet('en')
     }
-    
   }
 
     function emClick(){
-    
+        firebase.writeUserData();
         setEmActive(true);
         setTimeout(()=>setEmActive(false), 7000);
     }
-    
+
+    firebase.readCounter();
 
   return (
     <>
@@ -50,10 +50,7 @@ function App() {
     <FPV/>
     <Timelapse languageSet={languageSet}/>
     <Contact languageSet={languageSet}/>
-    
     <Footer emClick={emClick} />
-    
-    
     </>
   );
 }

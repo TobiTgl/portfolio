@@ -4,14 +4,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import axios from 'axios';
 import { Parallax, Background } from 'react-parallax';
-export default function About(props) {
 
-  
+export default function About(props) {
 
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [ageSet, setageSet] = useState('');
-    
     const [gallery, setGallery] = useState([]);
     
     useEffect(() => {
@@ -41,10 +39,7 @@ export default function About(props) {
   }
 
   const age = () => {
-            
-    const date = (new Date().toISOString()).substring(0,10)
-    
-
+  const date = (new Date().toISOString()).substring(0,10)
     if(parseInt(date.substring(5,7)) === 3 && parseInt(date.substring(8,10)) >= 30){
       const dateAge = (new Date().getFullYear())-1997
       setageSet(dateAge)
@@ -58,12 +53,10 @@ export default function About(props) {
       const dateAge = (new Date().getFullYear())-1997
       setageSet(dateAge)
     }
-
   }
   useEffect(() => {
     age()
   }, []);
- 
 
   const translations = {
     'en': {
@@ -82,7 +75,6 @@ export default function About(props) {
     }
   }
 
- 
     return (
       <section id="about">
     <Container>   
@@ -104,14 +96,9 @@ export default function About(props) {
                         </Background>
                         <div style={{ height: '310px'}} />
                     </Parallax>
-                          
-                          
-
-                      )
+                    )
                   })
-              }  
-              
-                  
+              }
               </div>
           </Fade>
         </Col>
@@ -130,12 +117,8 @@ export default function About(props) {
               {(
                 <span className="d-flex mt-3">
                      <Link to="contact" smooth duration={1000}>
-                  <div
-                    
-                    className="cta-btn cta-btn--resume"
-              
-                  >
-                    {getTranslation(props.languageSet, 'button')}
+                  <div className="cta-btn cta-btn--resume">
+                  {getTranslation(props.languageSet, 'button')}
                   </div>
                   </Link>
                 </span>
@@ -147,6 +130,4 @@ export default function About(props) {
     </Container>
   </section>
   )
-  
-    
 }

@@ -1,0 +1,42 @@
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, get, child } from "firebase/database";
+import React,{useState} from 'react';
+
+    let emCounter;
+    const firebaseConfig = {apiKey: process.env.REACT_APP_API_KEY,
+                            authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+                            projectId: process.env.REACT_APP_PROJECT_ID,
+                            storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+                            messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+                            appId: process.env.REACT_APP_APP_ID,
+                            measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+                            databaseURL: process.env.REACT_APP_DATABASE_URL,
+                            };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    const writeUserData = () =>{
+    readCounter();
+    console.log(emCounter)
+      const db = getDatabase();
+      set(ref(db, '/'), {
+        counter:emCounter+1
+      });
+    }
+
+    const dbRef = ref(getDatabase());
+    const readCounter = () =>{
+    get(child(dbRef, `/`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        emCounter = snapshot.val().counter;
+      } else {
+        console.log("No data available");
+      }
+    }).catch((error) => {
+      console.error(error);
+    });
+    }
+
+    export {readCounter, writeUserData}

@@ -8,8 +8,7 @@ import Fade from 'react-reveal/Fade';
 export default function Header(props) {
     const [isDesktop, setIsDesktop] = useState(false);
         const [isMobile, setIsMobile] = useState(false);
-        
-      
+
         useEffect(() => {
           if (window.innerWidth > 769) {
             setIsDesktop(true);
@@ -24,7 +23,6 @@ export default function Header(props) {
             
             return translations[lang][text];
           }
-             
 
         const translations = {
             'en': {
@@ -107,9 +105,6 @@ export default function Header(props) {
                          </Navbar.Collapse>
                  </Navbar>
                  </Fade>
-                
-                
-         
                </Container>
              </footer>
              )
