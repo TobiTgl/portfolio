@@ -5,11 +5,6 @@ import { Link } from 'react-scroll';
 //import styles from './Menu.module.css'
 
 export default function Hero(props) {
-
-    
-        //const { hero } = useContext(PortfolioContext);
-        //const { title, name, subtitle, cta } = hero;
-      
         const [isDesktop, setIsDesktop] = useState(false);
         const [isMobile, setIsMobile] = useState(false);
       

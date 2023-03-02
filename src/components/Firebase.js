@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, get, child } from "firebase/database";
-import React,{useState} from 'react';
 
     let emCounter;
     const firebaseConfig = {apiKey: process.env.REACT_APP_API_KEY,

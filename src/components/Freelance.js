@@ -116,25 +116,6 @@ export default function Freelance(props) {
                                     </a>
                                     <p className="mb-4">{ ''}</p>
                                 </div>
-                                {/*<a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn cta-btn--hero"
-                                    href={'#!'}
-                                >
-                                    See Live
-                                </a>
-
-                                { (
-                                    <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn text-color-main"
-                                    
-                                    >
-                                    Source Code
-                                    </a>
-                                )}*/}
                                 </div>
                             </Fade>
                         </Col>
@@ -192,25 +173,6 @@ export default function Freelance(props) {
                                     </a>
                                     <p className="mb-4">{ ''}</p>
                                 </div>
-                                {/*<a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn cta-btn--hero"
-                                    href={'#!'}
-                                >
-                                    See Live
-                                </a>
-
-                                { (
-                                    <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cta-btn text-color-main"
-                                    
-                                    >
-                                    Source Code
-                                    </a>
-                                )}*/}
                                 </div>
                             </Fade>
                         </Col>
