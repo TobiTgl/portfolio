@@ -7,7 +7,7 @@ import useSound from 'use-sound';
 export default function Footer(props) {
     let scroll    = Scroll.animateScroll;
     const [play] = useSound(
-        'https://res.cloudinary.com/tobitgl/video/upload/v1625567949/Portfolio/slimtobihigh_1_ixijsv.wav',
+        'https://res.cloudinary.com/tobitgl2/video/upload/v1695113150/tobiastoegel.com/slimtobihigh_1_ixijsv.wav',
         { volume: 1 }
       );
 

@@ -94,7 +94,7 @@ export default function Projects(props) {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.2,c_scale/v1655632319/Portfolio/Capgemini_Logo_Color_RGB_ir21dp.png"} alt="img" width="100%" height="100%"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl2/image/upload/w_0.2,c_scale/v1695111417/tobiastoegel.com/Projekte/Capgemini_Logo_Color_RGB_ir21dp.png"} alt="img" width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
                             
@@ -147,7 +147,7 @@ export default function Projects(props) {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <img src={"https://res.cloudinary.com/tobitgl/image/upload/w_0.25,c_scale/v1625401586/Portfolio/proj_2_von_2_e4adhx.jpg"}  alt="img" width="100%" height="100%"></img>
+                                    <img src={"https://res.cloudinary.com/tobitgl2/image/upload/w_0.25,c_scale/v1695111417/tobiastoegel.com/Projekte/proj_2_von_2_e4adhx.jpg"}  alt="img" width="100%" height="100%"></img>
                                 </div>
                                 </Tilt>
                             
@@ -199,7 +199,7 @@ export default function Projects(props) {
                                 }}
                                 >
                                 <div data-tilt className="thumbnail rounded">
-                                    <video autoPlay="autoplay" loop={true} muted src="https://res.cloudinary.com/tobitgl/video/upload/w_0.13,c_scale/v1625411339/Portfolio/randfood_b6nhdm.mp4">
+                                    <video autoPlay="autoplay" loop={true} muted src="https://res.cloudinary.com/tobitgl2/video/upload/w_0.13,c_scale/v1695111632/tobiastoegel.com/Videos/randfood_b6nhdm.mp4.mp4">
                                     </video>
                                 </div>
                                 </Tilt>

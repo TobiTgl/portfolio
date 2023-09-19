@@ -33,7 +33,7 @@ export default function Header(props) {
               'fpv': 'FPV',
               'Timelapse': 'Timelapse',
               'Contact': 'Contact',
-              'Flag': 'https://res.cloudinary.com/tobitgl/image/upload/v1628092108/Portfolio/germany_qdxk0a.png'
+              'Flag': 'https://res.cloudinary.com/tobitgl2/image/upload/v1695111256/tobiastoegel.com/Language/flw8gxpgdvbhlkkqmyrh.png'
             },
             'de': {
                 'About': 'Über mich',
@@ -43,7 +43,7 @@ export default function Header(props) {
                 'fpv': 'FPV',
                 'Timelapse': 'Zeitraffer',
                 'Contact': 'Kontakt',
-                'Flag': 'https://res.cloudinary.com/tobitgl/image/upload/v1628092148/Portfolio/united-kingdom_jual6z.png'
+                'Flag': 'https://res.cloudinary.com/tobitgl2/image/upload/v1695111256/tobiastoegel.com/Language/unwetii5ukycfegnjbl0.png'
             }
           }
         
@@ -52,7 +52,7 @@ export default function Header(props) {
                <Container>
                <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
                  <Navbar className="header" expand="sm" variant="dark">
-                     <Navbar.Brand className="brand" href="#"><img src="https://res.cloudinary.com/tobitgl/image/upload/v1624871653/Portfolio/ttobenunten_mpqktt.png" width="30" height="30" alt="Logo" /> </Navbar.Brand>
+                     <Navbar.Brand className="brand" href="#"><img src="https://res.cloudinary.com/tobitgl2/image/upload/v1695111256/tobiastoegel.com/ttobenunten_mpqktt.png" width="30" height="30" alt="Logo" /> </Navbar.Brand>
                          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                          <Navbar.Collapse id="responsive-navbar-nav">
                          <Navbar.Text>

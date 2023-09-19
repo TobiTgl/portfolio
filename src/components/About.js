@@ -13,7 +13,7 @@ export default function About(props) {
     const [gallery, setGallery] = useState([]);
     
     useEffect(() => {
-        axios.get('https://res.cloudinary.com/tobitgl/image/list/pb.json')
+        axios.get('https://res.cloudinary.com/tobitgl2/image/list/pbpic.json')
             .then(res => {
                 
                 const arr = res.data.resources;
@@ -92,7 +92,7 @@ export default function About(props) {
                         <Parallax key={data.public_id} blur={0} bgImage="" bgImageAlt="the cat" strength={70}>
                         <p style={{ opacity: '0'}}>Content goes here. Parallax height grows .</p>
                         <Background className="custom-bg">
-                            <img src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.12,c_scale/${data.public_id}.jpg`} alt="fill murray" />
+                            <img src={`https://res.cloudinary.com/tobitgl2/image/upload/w_0.12,c_scale/${data.public_id}.jpg`} alt="fill murray" />
                         </Background>
                         <div style={{ height: '310px'}} />
                     </Parallax>
