@@ -10,7 +10,7 @@ export default function Gallery(props) {
     
     const [gallery, setGallery] = useState([]);
     useEffect(() => {
-        axios.get('https://res.cloudinary.com/tobitgl/image/list/portfolio.json')
+        axios.get('https://res.cloudinary.com/tobitgl2/image/list/portfolio.json')
             .then(res => {
                 
                 const arr = res.data.resources;
@@ -59,7 +59,7 @@ export default function Gallery(props) {
                                 <div className="about-wrapper__image">
                             <img
                             
-                            src={`https://res.cloudinary.com/tobitgl/image/upload/w_0.65,c_scale/${data.public_id}.jpg`}
+                            src={`https://res.cloudinary.com/tobitgl2/image/upload/w_0.65,c_scale/${data.public_id}.jpg`}
                             className="carousel"
                             alt="img"
                             />
