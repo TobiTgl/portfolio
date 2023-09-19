@@ -32,11 +32,13 @@ function App() {
   }
 
     function emClick(){
-        //firebase.readCounter();
         //firebase.writeUserData();
         setEmActive(true);
         setTimeout(()=>setEmActive(false), 7000);
     }
+
+    //firebase.readCounter();
+
 
   return (
     <>
