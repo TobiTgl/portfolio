@@ -1,7 +1,7 @@
 {
   "name": "eigenbau",
   "version": "0.1.0",
-  "homepage": "https://tobitgl.github.io/portfolio",
+  "homepage": "https://tobitgl.github.io",
   "private": true,
   "dependencies": {
     "@react-spring/parallax": "^9.2.4",
