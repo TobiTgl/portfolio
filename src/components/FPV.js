@@ -6,7 +6,7 @@ import { Container} from 'react-bootstrap';
 export default function FPV() {
     const [video, setVideo] = useState([]);
     useEffect(() => {
-        axios.get('https://res.cloudinary.com/tobitgl/video/list/fpv.json')
+        axios.get('https://res.cloudinary.com/tobitgl2/video/list/fpv.json')
             .then(res => {
                 const arr = res.data.resources;
                 setVideo(arr);
@@ -20,7 +20,7 @@ export default function FPV() {
                     {
                     video.map(data => {
                         return(
-                        <ReactPlayer key={data.public_id} url={`https://res.cloudinary.com/tobitgl/video/upload/${data.public_id}.mp4`} playing={true} volume={0} loop={true} width='100%' height='100%'/>   
+                        <ReactPlayer key={data.public_id} url={`https://res.cloudinary.com/tobitgl2/video/upload/${data.public_id}.mp4`} playing={true} volume={0} loop={true} width='100%' height='100%'/>
                         )
                     })
                 } 

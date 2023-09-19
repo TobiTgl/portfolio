@@ -89,7 +89,7 @@ export default function Freelance(props) {
                                 >
                                     <div data-tilt >
                                         <a className="swp" rel="noreferrer" href="https://www.instagram.com/p/CRGVSFgqlaV" target="_blank">
-                                        <img src={"https://res.cloudinary.com/tobitgl/image/upload/v1655385042/Portfolio/gallery/Screenshot_2022-06-16_151004_gjthtb.png"}  alt="img" width="10%" height="10%"></img>
+                                        <img src={"https://res.cloudinary.com/tobitgl2/image/upload/v1695111421/tobiastoegel.com/Projekte/syusf51cdl3sme9l2hst.png"}  alt="img" width="10%" height="10%"></img>
                                         </a>
                                     </div>
                                 </Tilt>
@@ -146,7 +146,7 @@ export default function Freelance(props) {
                                     }}
                                 >
                                     <div data-tilt className="thumbnail rounded">
-                                    <img className="swp" src={"https://res.cloudinary.com/tobitgl/image/upload/v1655390616/Portfolio/gallery/mokup_uhrg4t.png"}  alt="img" ></img>
+                                    <img className="swp" src={"https://res.cloudinary.com/tobitgl2/image/upload/v1695111417/tobiastoegel.com/Projekte/xc6ravnjscbokhy70yve.png"}  alt="img" ></img>
 
                                     </div>
                                 </Tilt>
